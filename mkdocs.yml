@@ -11,22 +11,22 @@ repo_name: MrowrMisc/n8n-custom-nodes-guide
 
 theme:
   name: material
-  # favicon: favicon.ico
-  # logo: assets/images/observant-py.png
+  favicon: favicon.ico
+  logo: assets/images/n8n.png
   palette:
     
     # Palette toggle for light mode
     - scheme: 
-      primary: green
-      accent: light green
+      primary: white
+      accent: deep orange
       toggle:
         icon: material/brightness-7 # (2)!
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - scheme: slate
-      primary: green
-      accent: light green
+      primary: black
+      accent: deep orange
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -34,7 +34,7 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.expand
+    # - navigation.expand
     - navigation.indexes
     - content.code.copy
     - content.code.annotate
@@ -64,24 +64,79 @@ markdown_extensions:
 #             show_root_heading: true
 #             heading_level: 2
 
-# nav:
-#   - Home: index.md
-#   - Getting Started: getting_started.md
-#   - Features:
-#       - Change Tracking: features/change_tracking.md
-#       - Validation: features/validation.md
-#       - Undo and Redo: features/undo.md
-#       - Computed Properties: features/computed.md
-#       - Dirty Tracking: features/dirty.md
-#       - Sync vs Non-Sync: features/sync.md
-#       - Saving and Loading: features/save_load.md
-#   - API Reference:
-#       - Overview: api_reference/index.md
-#       - Observable: api_reference/observable.md
-#       - ObservableList: api_reference/observable_list.md
-#       - ObservableDict: api_reference/observable_dict.md
-#       - ObservableProxy: api_reference/observable_proxy.md
-#       - Types:
-#           - Overview: api_reference/types/index.md
-#       - Interfaces:
-#           - Overview: api_reference/interfaces/index.md
+nav:
+  - Home: index.md
+  - 📚 Public Node API:
+      - Overview: public-api/index.md
+      - Execution Contexts:
+          - IExecuteFunctions: public-api/execution-contexts/IExecuteFunctions.md
+          - IExecuteSingleFunctions: public-api/execution-contexts/IExecuteSingleFunctions.md
+          - ILoadOptionsFunctions: public-api/execution-contexts/ILoadOptionsFunctions.md
+          - IPollFunctions: public-api/execution-contexts/IPollFunctions.md
+          - ITriggerFunctions: public-api/execution-contexts/ITriggerFunctions.md
+          - IWebhookFunctions: public-api/execution-contexts/IWebhookFunctions.md
+          - IHookFunctions: public-api/execution-contexts/IHookFunctions.md
+      - Helpers:
+          - Overview: public-api/helpers/index.md
+          - Binary: public-api/helpers/binary.md
+          - HTTP: public-api/helpers/http.md
+          - Filesystem: public-api/helpers/filesystem.md
+          - Deduplication: public-api/helpers/deduplication.md
+          - Base: public-api/helpers/base.md
+      - Parameter Access:
+          - getNodeParameter: public-api/parameters/getNodeParameter.md
+          - evaluateExpression: public-api/parameters/evaluateExpression.md
+          - getCurrentNodeParameter: public-api/parameters/getCurrentNodeParameter.md
+      - Workflow & Execution:
+          - getWorkflow: public-api/workflow/getWorkflow.md
+          - getWorkflowStaticData: public-api/workflow/getWorkflowStaticData.md
+          - executeWorkflow: public-api/workflow/executeWorkflow.md
+          - putExecutionToWait: public-api/workflow/putExecutionToWait.md
+      - Advanced:
+          - startJob: public-api/advanced/startJob.md
+          - logAiEvent: public-api/advanced/logAiEvent.md
+          - sendMessageToUI: public-api/advanced/sendMessageToUI.md
+      - Reference:
+          - Types: public-api/reference/types.md
+          - Interfaces: public-api/reference/interfaces.md
+  - 🧩 Patterns:
+      - Declarative Pattern:
+          - Overview: patterns/DeclarativePattern/overview.md
+          - When to Use: patterns/DeclarativePattern/when-to-use.md
+          - Key Features: patterns/DeclarativePattern/key-features.md
+          - Limitations: patterns/DeclarativePattern/limitations.md
+          - Summary: patterns/DeclarativePattern/summary.md
+      - Programmatic Pattern:
+          - Overview: patterns/ProgrammaticPattern/overview.md
+          - When to Use: patterns/ProgrammaticPattern/when-to-use.md
+          - Key Features: patterns/ProgrammaticPattern/key-features.md
+          - Limitations: patterns/ProgrammaticPattern/limitations.md
+          - Summary: patterns/ProgrammaticPattern/summary.md
+      - Modular Declarative Pattern:
+          - Overview: patterns/ModularDeclarativePattern/overview.md
+          - When to Use: patterns/ModularDeclarativePattern/when-to-use.md
+          - Key Features: patterns/ModularDeclarativePattern/key-features.md
+          - Limitations: patterns/ModularDeclarativePattern/limitations.md
+          - Summary: patterns/ModularDeclarativePattern/summary.md
+      - Other Patterns:
+          - Trigger Nodes: patterns/OtherPatterns/TriggerNodes.md
+          - Binary Nodes: patterns/OtherPatterns/BinaryNodes.md
+          - Pagination: patterns/OtherPatterns/Pagination.md
+  - 🔐 Credential Patterns:
+      - API Key: credential-patterns/APIKey.md
+      - OAuth2: credential-patterns/OAuth2.md
+      - Service Account: credential-patterns/ServiceAccount.md
+      - Manual Injection: credential-patterns/ManualInjection.md
+      - Credential Testing: credential-patterns/CredentialTesting.md
+  - 🧪 Real World Examples:
+      - Globals Node: real-world/GlobalsNode.md
+      - WebSocket Server Node: real-world/WebSocketServerNode.md
+      - Power BI Node: real-world/PowerBINode.md
+      - Apify Node: real-world/ApifyNode.md
+      - QR Code Node: real-world/QrCodeNode.md
+      - Airtop Node: real-world/AirtopNode.md
+  - 🎨 UI & UX:
+      - Display Options: ui-ux/DisplayOptions.md
+      - Collections and Additional Fields: ui-ux/CollectionsAndAdditionalFields.md
+      - Dynamic Options: ui-ux/DynamicOptions.md
+      - Codex Metadata: ui-ux/CodexMetadata.md
