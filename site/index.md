@@ -52,7 +52,7 @@ export class HelloWorldNode implements INodeType {
 
 - [Start with the Public API →](public-api/index.md)
 - [Pick a Node Pattern →](patterns/DeclarativePattern/overview.md)
-- [Browse Real Examples →](real-world/GlobalsNode.md)
+<!-- - [Browse Real Examples →](real-world/GlobalsNode.md) -->
 
 ---
 

@@ -128,13 +128,13 @@ nav:
       - Service Account: credential-patterns/ServiceAccount.md
       - Manual Injection: credential-patterns/ManualInjection.md
       - Credential Testing: credential-patterns/CredentialTesting.md
-  - 🧪 Real World Examples:
-      - Globals Node: real-world/GlobalsNode.md
-      - WebSocket Server Node: real-world/WebSocketServerNode.md
-      - Power BI Node: real-world/PowerBINode.md
-      - Apify Node: real-world/ApifyNode.md
-      - QR Code Node: real-world/QrCodeNode.md
-      - Airtop Node: real-world/AirtopNode.md
+#   - 🧪 Real World Examples:
+#       - Globals Node: real-world/GlobalsNode.md
+#       - WebSocket Server Node: real-world/WebSocketServerNode.md
+#       - Power BI Node: real-world/PowerBINode.md
+#       - Apify Node: real-world/ApifyNode.md
+#       - QR Code Node: real-world/QrCodeNode.md
+#       - Airtop Node: real-world/AirtopNode.md
   - 🎨 UI & UX:
       - Display Options: ui-ux/DisplayOptions.md
       - Collections and Additional Fields: ui-ux/CollectionsAndAdditionalFields.md
