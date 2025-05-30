@@ -1,0 +1,87 @@
+docs_dir: site
+site_dir: docs
+
+site_name: n8n Custom Nodes Guide
+site_url: https://mrowrmisc.github.io/n8n-custom-nodes-guide
+site_description: Guide to building custom nodes for n8n
+site_author: Mrowr Purr
+
+repo_url: https://github.com/MrowrMisc/n8n-custom-nodes-guide
+repo_name: MrowrMisc/n8n-custom-nodes-guide
+
+theme:
+  name: material
+  # favicon: favicon.ico
+  # logo: assets/images/observant-py.png
+  palette:
+    
+    # Palette toggle for light mode
+    - scheme: 
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-7 # (2)!
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.expand
+    - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+
+# extra_css:
+#   - style.css
+
+# plugins:
+#   - search
+#   - mkdocstrings:
+#       handlers:
+#         python:
+#           options:
+#             show_source: true
+#             show_root_heading: true
+#             heading_level: 2
+
+# nav:
+#   - Home: index.md
+#   - Getting Started: getting_started.md
+#   - Features:
+#       - Change Tracking: features/change_tracking.md
+#       - Validation: features/validation.md
+#       - Undo and Redo: features/undo.md
+#       - Computed Properties: features/computed.md
+#       - Dirty Tracking: features/dirty.md
+#       - Sync vs Non-Sync: features/sync.md
+#       - Saving and Loading: features/save_load.md
+#   - API Reference:
+#       - Overview: api_reference/index.md
+#       - Observable: api_reference/observable.md
+#       - ObservableList: api_reference/observable_list.md
+#       - ObservableDict: api_reference/observable_dict.md
+#       - ObservableProxy: api_reference/observable_proxy.md
+#       - Types:
+#           - Overview: api_reference/types/index.md
+#       - Interfaces:
+#           - Overview: api_reference/interfaces/index.md
